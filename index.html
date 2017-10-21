@@ -1,14 +1,79 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head lang="uk">
     <meta charset="UTF-8">
-    <title>My Page</title>
-
-
+    <title>JS-buylist</title>
     <link rel="stylesheet" type="text/css" href="main.css" />
 </head>
 <body>
-<h1>Hello World</h1>
-<p>Hello Git</p>
+<div class="container">
+    <div class="left-panel">
+        <div class="product-input">
+            <div class="merged">
+                <input class ="input" type="text"  placeholder="Назва товару">
+                <button class="primary-button"  data-tooltip="Додати новий продукт">Додати</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="right-panel">
+        <div class="statistics">
+            <h3>Залишилося</h3>
+            <div class="leftover-items"></div>
+            <h3>Куплено</h3>
+            <div class="bought-items"></div>
+        </div>
+    </div>
+</div>
+
+<div class="one-row-template" style="display:none">
+    <div class="bl-row">
+            <span class="bl-product">
+                <span class="bl-title"></span>
+                <input class="edit" type="text" placeholder="">
+            </span>
+        <span class="bl-count">
+                <button class="bl-minus" data-tooltip="Відняти">-</button>
+                <span class="bl-label"></span>
+                <button class="bl-plus" data-tooltip="Додати">+</button>
+            </span>
+        <span class="bl-buttons">
+                <button class="bl-unbought" data-tooltip="Непридбаний продукт" >Не куплено</button>
+                <button class="bl-bought" data-tooltip="Придбаний продукт">Куплено</button>
+              <button class="bl-delete" data-tooltip="Видалити зі списку">x</button>
+            </span>
+    </div>
+</div>
+
+
+
+<div class="leftover-item-template" style="display: none">
+    <span class="statistics-panel">
+        <span class="product-name"></span>
+        <span class="count-label"></span>
+    </span>
+</div>
+
+<div class="bought-item-template" style="display: none">
+    <span class="statistics-panel">
+        <span class="product-name "></span>
+        <span class="count-label "></span>
+    </span>
+</div>
+
+
+
+<div	class="badge">
+    <p>Buy List</p>
+    <p>created by:
+        <br>
+        Maria Zubchenko</p>
+</div>
+<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="main.js"></script>
+
+
+
 </body>
 </html>
