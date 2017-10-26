@@ -301,13 +301,13 @@ p:last-child{
 
 @media only screen and (max-width: 600px){
     .left-panel{
-        width:66%;
+        width:70%;
         margin-right: 100px;
     }
     .right-panel{
-        width:66%;
+        width:70%;
         margin-top: -70px;
-        margin-right: 270px;
+        margin-right: 238px;
 
     }
 }
